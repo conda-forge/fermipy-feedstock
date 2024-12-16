@@ -9,7 +9,7 @@ source:
   git_url: https://github.com/fermiPy/fermipy.git
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -92,7 +92,7 @@ requirements:
   run:
     - python >=3.7,!=3.8.*
     - numpy
-    - astropy
+    - astropy-base
     - matplotlib-base
     - scipy
     - pyyaml
