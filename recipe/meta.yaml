@@ -90,7 +90,7 @@ requirements:
     - setuptools
 
   run:
-    - python >=3.9
+    - python >=3.9,<3.10
     - numpy >=1.16
     - astropy-base <=6
     - matplotlib-base >=3.3
