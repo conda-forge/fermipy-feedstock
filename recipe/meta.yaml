@@ -86,18 +86,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7,!=3.8.*
+    - python >=3.9
     - setuptools
 
   run:
-    - python >=3.7,!=3.8.*
-    - numpy>=1.16
-    - astropy-base<=6
-    - matplotlib-base>=3.3
-    - scipy<1.12
+    - python >=3.9
+    - numpy >=1.16
+    - astropy-base <=6
+    - matplotlib-base >=3.3
+    - scipy <1.12
     - pyyaml
     - healpy
-    - gammapy>=1.0
+    - gammapy >=1.0
     - astropy-healpix
 
 test:
