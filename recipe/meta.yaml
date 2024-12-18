@@ -86,7 +86,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.9,<3.10
     - setuptools
 
   run:
