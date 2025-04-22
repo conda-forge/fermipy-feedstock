@@ -10,7 +10,7 @@ source:
   git_url: https://github.com/fermiPy/fermipy.git
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -95,7 +95,7 @@ requirements:
     - numpy >=1.16
     - astropy-base
     - matplotlib-base >=3.3
-    - scipy <1.12
+    - scipy <1.14
     - pyyaml
     - healpy
     - gammapy >=1.0
