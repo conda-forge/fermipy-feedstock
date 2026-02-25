@@ -95,7 +95,7 @@ requirements:
     - numpy >=1.16
     - astropy-base
     - matplotlib-base >=3.3
-    - scipy <1.14
+    - scipy
     - pyyaml
     - healpy
     - gammapy >=1.0
