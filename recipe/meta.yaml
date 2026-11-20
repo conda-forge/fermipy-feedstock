@@ -1,6 +1,6 @@
 {% set name = "fermipy" %}
 {% set version = environ.get('GIT_DESCRIBE_TAG', 'untagged')|string|replace('-','_') %}
-{% set python_min = 3.9 %}
+{% set python_min = 3.11 %}
 
 package:
   name: {{ name|lower }}
@@ -93,13 +93,14 @@ requirements:
   run:
     - python >={{ python_min }}
     - numpy >=1.16
-    - astropy-base
+    - astropy-base <8
     - matplotlib-base >=3.3
-    - scipy
+    - scipy <1.18
     - pyyaml
     - healpy
-    - gammapy >=1.0
+    - gammapy >=2.0
     - astropy-healpix
+    - regions <0.12
 
 test:
   imports:
